@@ -1,0 +1,51 @@
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron .login {
+  background-color: #dd5353;
+}
+.jumbotron {
+  padding: 7rem 1rem 1rem 1rem;
+}
+
+.footer {
+  background-color: #dd5353;
+  color: #eddbc0;
+}
+
+.footer .social-media {
+  font-size: 2rem;
+}
+.footer .social-media a {
+  text-decoration: none;
+  color: #eddbc0;
+  margin: 0 0.5rem;
+}
+.footer .social-media a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.product a {
+  color: #dd5353;
+}
+
+.product button a:hover {
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  color: white;
+  position: fixed;
+  background: #000000;
+}
+
+.main-pages {
+  margin-left: 250px;
+  position: relative;
+  height: auto;
+  padding: 1rem;
+}

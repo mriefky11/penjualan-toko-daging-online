@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap css bundle -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <title>All About Daging</title>
+  </head>
+  <body>
+  	<!-- Start Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
+      style="background-color: #dd5353"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Checkout</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  	<!-- HTML -->
+  	<div class="container">
+  <div class="py-5 text-center">
+  	<br>
+    <h2>Pembayaran</h2>
+    <p class="lead"></p>
+  </div>
+        
+  <div class="card border-danger" style="width: 18rem; ">
+    <div class="card-body">
+      <h5 class="card-title position-absolute top-0 start-50 translate-middle-x">Telur Ayam</h5>
+      <br>
+      <p class="card-text">Telur ayam segar langsung dari sumbernya</p>
+      <p class="card-text ">Rp 20.000</a>
+    </div>
+  </div>
+<p></p>
+    </section>
+      <h4 class="mb-3">Detail Penerima</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Nama Depan" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Nama Belakang" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address">Detail Alamat</label>
+          <input type="text" class="form-control" id="address" placeholder="Alamat Lengkap" required>
+          <div class="invalid-feedback">
+            Alamat Lengkap
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address2">Alamat 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Alamat Ke-2">
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Provinsi</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>Jawa Barat</option>
+              <option>Jawa Timur</option>
+              <option>Jawa Tengah</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Kota</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>Bandung</option>
+              <option>Garut</option>
+              <option>Jogjakarta</option>
+              <option>Malang</option>
+
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Kode Pos</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Kode Pos.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Jadikan Alamat Sebagai Default</label>
+          <!-- Button trigger modal -->
+
+        </div>
+        <hr class="mb-4">
+        <h4 class="mb-3">Payment</h4>
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Transfer Bank</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+            <div class="row">
+            <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+          </div>
+           <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">Dana</label>
+          </div>
+           <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">Cash on Delivery(COD)</label>
+          </div>
+
+          <hr class="mb-4">
+          <h4 class="mb-3">Pengiriman</h4>
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Pilih Jasa Pengiriman</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">GoJek</option>
+              <option>JNE</option>
+              <option>Anter Aja</option>
+              <option>Ambil Ditempat</option>
+            </select>
+            <p text-small>Ongkir Rp 20.000</p>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block position-absolute bottom " type="submit">Lanjutkan Checkout</button>
+      </form>
+    </div>
+    </div>
+  <!-- start footer -->
+  <section class="footer mt-5 p-4 mt-4 text-center fixed-sticky">
+    <div class="text-center">
+        <div class="social-media mt-1 mb-4">
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+          <a href=""><i class="bi bi-envelope"></i></a>
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+    <p>Design By Kelompok 8 2022</p>
+</section>
+<!-- End Footer -->
+</div>
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+</body>
+</html>
